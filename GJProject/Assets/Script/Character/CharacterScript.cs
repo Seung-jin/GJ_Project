@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterScript : MonoBehaviour {
     public int hp;
     public int normal_attack;
-    public List<CharacterSkill> skillList;
+    public List<CharacterSkillScript> skillList;
     public string cha_name;
     public Grade grade;
 }

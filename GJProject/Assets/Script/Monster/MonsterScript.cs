@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monster : MonoBehaviour
+public class MonsterScript : MonoBehaviour
 {
     public int hp;
     public int normal_attack;

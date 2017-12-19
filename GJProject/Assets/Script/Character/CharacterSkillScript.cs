@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterSkill {
+public class CharacterSkillScript {
     public SkillType skillType;
     public int damage;
     public int heal;
@@ -12,7 +12,7 @@ public class CharacterSkill {
     /// 해당 스킬의 발동 대상을 설정
     /// </summary>
     /// <param name="monsterList"></param>
-    public void SelectSkillTarget(List<Monster> monsterList)
+    public void SelectSkillTarget(List<MonsterScript> monsterList)
     {
         if(skillType.Equals(SkillType.One_Attack))
         {
@@ -37,7 +37,7 @@ public class CharacterSkill {
     /// </summary>
     /// <param name="monsterList">적 진영에 있는 몬스터 리스트들</param>
     /// <param name="pos">단 하나만 선택 시 선택된 것의 위치</param>
-    public void ActiveSkill(List<Monster> monsterList, int pos)
+    public void ActiveSkill(List<MonsterScript> monsterList, int pos)
     {
         if (skillType.Equals(SkillType.One_Attack))
         {
