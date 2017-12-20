@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterSkillScript {
     public SkillType skillType;
     public int damage;
-    public int heal;
+    public int heal_amount;
     public string name;
 
     /// <summary>
