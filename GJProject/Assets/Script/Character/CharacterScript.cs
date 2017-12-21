@@ -34,7 +34,7 @@ public class CharacterScript : MonoBehaviour {
 
 public enum Grade
 {
-    First = 1,
-    Second,
-    Third,
+    FIRST = 1,
+    SECOND,
+    THIRD,
 }
