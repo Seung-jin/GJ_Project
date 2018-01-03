@@ -6,7 +6,7 @@ public class CharacterScript {
     public int max_hp;
     public int cur_hp;
     public int normal_attack;
-    public List<CharacterSkillScript> skillList;
+    public List<CharacterSkillScript> skillList = new List<CharacterSkillScript>();
     public string cha_name;
     public Grade grade;
 }

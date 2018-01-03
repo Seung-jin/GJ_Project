@@ -5,8 +5,17 @@ using UnityEngine;
 public class CharacterSkillScript {
     public SkillType skillType;
     public int damage;
-    public int heal_amount;
+    public int healAmount;
     public string name;
+
+    public CharacterSkillScript() { }
+    public CharacterSkillScript(SkillType skillType, int damage, int healAmount, string name)
+    {
+        this.skillType = skillType;
+        this.damage = damage;
+        this.healAmount = healAmount;
+        this.name = name;
+    }
 
     /// <summary>
     /// 해당 스킬의 발동 대상을 설정
