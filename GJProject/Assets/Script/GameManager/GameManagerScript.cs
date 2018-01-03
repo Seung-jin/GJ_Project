@@ -10,9 +10,6 @@ public class GameManagerScript : MonoBehaviour {
 
     void Start()
     {
-        characterListScript = new CharacterListScript();
-        characterListScript.characterList.Add(new Character_Dealer1());
+
     }
-
-
 }
