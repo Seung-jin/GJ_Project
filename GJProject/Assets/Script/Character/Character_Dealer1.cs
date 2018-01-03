@@ -12,6 +12,6 @@ public class Character_Dealer1 : CharacterScript
         cha_name = "Dealer1";
         grade = Grade.FIRST;
 
-        skillList.Add(new CharacterSkillScript(SkillType.One_Attack, 5, 0, "Attack!!"));
+        skillList.Add(new CharacterSkillScript(SkillType.One_Attack, 8, 0, "Attack!!"));
     }
 }

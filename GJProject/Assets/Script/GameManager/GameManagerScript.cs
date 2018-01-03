@@ -6,7 +6,6 @@ public class GameManagerScript : MonoBehaviour {
 
     public CharacterListScript characterListScript;
     public MonsterScript monster;
-    public SelectCharacterScript selectCharacterScript;
 
     void Start()
     {
