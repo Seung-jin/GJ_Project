@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GachaCharacterScript : MonoBehaviour
+public class GachaCharacterSceneScript : MonoBehaviour
 {
     public Text messageText;
     public Text displayText;
