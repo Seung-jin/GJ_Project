@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CharacterObjectScript : MonoBehaviour {
     public CharacterScript character;
-    public SkinnedMeshRenderer bodySkin;
-    public SkinnedMeshRenderer weapon;
 
     public Animation characterAni;
     public AnimationClip attackAniClip;
