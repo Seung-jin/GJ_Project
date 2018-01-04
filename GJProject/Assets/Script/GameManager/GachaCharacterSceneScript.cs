@@ -27,4 +27,9 @@ public class GachaCharacterSceneScript : MonoBehaviour
         displayText.text = "";
         PlayerScript.Instance().characterList.ForEach(x => displayText.text += (x.cha_name + " "));
     }
+
+    public void GoBattleScene()
+    {
+        Application.LoadLevel("BattleScene");
+    }
 }
