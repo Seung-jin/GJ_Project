@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class BattleSceneScript : MonoBehaviour {
     public List<PlayerBlockScript> playerBlockList;
+    PlayerScript playerScript = null;
 
     void Start()
     {
-        //for(int i=0; i<PlayerScript.Instance().characterList.Count; i++)
-        //{
-        //    print(PlayerScript.Instance().characterList[i].cha_name);
-        //}
+        playerScript = PlayerScript.Instance();
+        print(playerScript.characterList.Count);
+        for (int i=0; i<playerScript.characterList.Count; i++)
+        {
+            playerScript.characterList[i].gameObject.SetActive(true);
+        }
     }
 }

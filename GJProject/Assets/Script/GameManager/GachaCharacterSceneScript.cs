@@ -17,7 +17,11 @@ public class GachaCharacterSceneScript : MonoBehaviour
         }
         else
         {
-            PlayerScript.Instance().characterList.Add(characterManager.characters[Random.Range(0, characterManager.characters.Count)]);
+            CharacterScript temp = Instantiate(characterManager.characters[Random.Range(0, characterManager.characters.Count)],
+                new Vector3(0, 0, 0), Quaternion.identity);
+            temp.gameObject.transform.SetParent(PlayerScript.Instance().gameObject.transform);
+            PlayerScript.Instance().characterList.Add(temp);
+
             DisplayCharacterList();
         }
     }
