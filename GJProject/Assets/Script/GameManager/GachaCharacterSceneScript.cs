@@ -13,7 +13,7 @@ public class GachaCharacterSceneScript : MonoBehaviour
     public void GachaCharacter()
     {
         if(PlayerScript.Instance().characterList.Count.Equals(PlayerScript.Instance().GetMaxCharacter())) {
-            messageText.text = "Character box is filled!!";
+            messageText.text = "Character window is filled!!";
         }
         else
         {
@@ -30,6 +30,13 @@ public class GachaCharacterSceneScript : MonoBehaviour
 
     public void GoBattleScene()
     {
-        Application.LoadLevel("BattleScene");
+        if(!PlayerScript.Instance().characterList.Count.Equals(PlayerScript.Instance().GetMaxCharacter()))
+        {
+            messageText.text = "You must fill your character window!!";
+        }
+        else
+        {
+            Application.LoadLevel("BattleScene");
+        }
     }
 }
